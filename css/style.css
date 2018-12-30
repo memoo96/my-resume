@@ -696,6 +696,10 @@ header .info a i:hover{
     background-color: #563d7c;
 }
 
+#Skills .progress_skills .progress_bar ul li .progress_sass span{
+    background-color: #cd6799;
+}
+
 #Skills .progress_skills .progress_bar ul li .progress_js span{
     background-color: #f1e05a;
 }
@@ -706,6 +710,10 @@ header .info a i:hover{
 
 #Skills .progress_skills .progress_bar ul li .progress_bootstrap span{
     background-color: #563d7c;
+}
+
+#Skills .progress_skills .progress_bar ul li .progress_angular span{
+    background-color: red;
 }
 
 #Skills .progress_skills .progress_bar ul li .progress_php span{
