@@ -724,9 +724,6 @@ header .info a i:hover{
     background-color: #2b5d80;
 }
 
-#Skills .progress_skills .progress_bar ul li .progress_csharp span{
-    background-color: #178600;
-}
 
 @media (max-width:767px){
     #Skills .education .education_left h3{
