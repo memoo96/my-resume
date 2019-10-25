@@ -1,5 +1,8 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .overlay{        
@@ -180,8 +183,16 @@ header .info a i:hover{
 .navbar{                                 
     height: auto;
     width: 100%;
-    background-color:#000 ;
+    background-color:#000;
     border-radius:0; 
+    transition: all 0.2s;
+}
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 
@@ -719,11 +730,11 @@ header .info a i:hover{
     background-color: red;
 }
 
-#Skills .progress_skills .progress_bar ul li .progress_php span{
-    background-color: #4f5d95;
+#Skills .progress_skills .progress_bar ul li .progress_illustrator span{
+    background-color: #c9c509;
 }
 
-#Skills .progress_skills .progress_bar ul li .progress_mysql span{
+#Skills .progress_skills .progress_bar ul li .progress_git span{
     background-color: #2b5d80;
 }
 

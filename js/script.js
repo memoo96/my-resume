@@ -14,6 +14,8 @@ $(document).ready(function(){
     });
 
 
+    
+
     /* When Scroll Change Header Background */
     $(window).scroll(function(){
     var sc = $(this).scrollTop();
@@ -59,6 +61,25 @@ $(document).ready(function(){
         });
 
 
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        var id = $(this).attr('href');
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+        e.preventDefault();
+        var pos = $id.offset().top - 50;
+        $('body, html').animate({scrollTop: pos},1000);
+    });
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= $('header').outerHeight()) {
+            $('.navbar').addClass('fixed');
+        }
+        else {
+            $('.navbar').removeClass('fixed');
+        }
+    })
 
    
 
